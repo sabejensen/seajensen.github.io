@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm a web developer. Sometimes I make websites or mobile apps. I like music, storytelling, and pretzel M&M's.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[seajensen@gmail.com](mailto:seajensen@gmail.com)
