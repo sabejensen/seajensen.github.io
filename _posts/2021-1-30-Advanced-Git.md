@@ -3,7 +3,7 @@ layout: post
 title: Advanced Git
 ---
 
-###Git Rebase
+**Git Rebase**
 
 In practice, there are times when simply merging two branches is insufficient. These are times when you might want to consider a rebase. When you perform a git rebase, you’re changing the branch of one commit to another. You’re turning a potentially confusing project history with multiple branches into one clean, linear history. Some potential advantages are that it can be easier to solve for bugs if you only have to sort through commits from one branch, or just to keep the repo more clean in general. However, in my experiences, especially on bigger projects, rebases can get very complicated. When manually parsing through two branches with a lot of differences, a rebase can quickly become a lengthy process. 
 
@@ -26,7 +26,7 @@ Once again this allows us to complete the rebase.
 ![Rebase example 5](../images/git5.jpg)
 
 
-###Git Reset
+**Git Reset**
 
 The git reset tool is broadly meant to undo changes in a git repo. There are three variants:
 
@@ -37,24 +37,24 @@ Mixed - Conversely, mixed will only reset the staging index to a specified commi
 Soft - A soft reset only changes the commit history. It won’t make changes to the staging index or the working directory. 
 
 
-###Git Checkout
+**Git Checkout**
 
 Git checkouts are typically used to change branches, but the command is actually surprisingly versatile. It can also switch between different files and commits, as well as branches. When you switch branches, Git will update the working directory to reflect that new branch. 
 
 
-###Git Revert
+**Git Revert**
 
 A git revert functions as a sort of “undo.” But it doesn’t literally return you to a previous commit. Instead, it emulates this effect by creating a new commit based off of an older commit. If you’ve created a bug in a new commit, a revert is a safe and effective way to return to an older commit. 
 
 
-###Differences and Similarities
+**Differences and Similarities**
 
 Git Reset, Git Revert, and Git Checkout can all be used to functionally “undo” a new commit. They are similar in that aspect, but all three of them function in different ways. 
 
 Reset is the most committal and, in some ways, the most risky. Depending on which variant you use, you can risk losing work that’s currently in your working directory or staging index. Git checkout is a versatile tool, but when used to change directly from one commit to another. Git revert will duplicate an old commit and add it to the end of the working history.
 
 
-###Uses
+**Uses**
 
 You might use a git reset if you wanted to completely do away with a new commit and return to an older commit. You could also potentially use it to undo changes to the staging index or onstage a file.
 
@@ -77,7 +77,7 @@ Example of a git revert:
 ![Revert example](../images/git9.jpg)
 
 
-###Git Submodules
+**Git Submodules**
 
 Git submodules exist within a larger git repository. They track specific commits from external code. Rather than automatically using the most up to date version of external code, you can snapshot and use a specific version from a specific commit. 
 
